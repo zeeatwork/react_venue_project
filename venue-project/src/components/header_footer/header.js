@@ -8,8 +8,22 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        header;
+        <AppBar
+          position="fixed"
+          style={{
+            backgroundColor: "#2f2f2f",
+            boxShadow: "none",
+            padding: "10px 0px",
+          }}
+        >
+          <Toolbar>
+            <div className="header_logo">
+              <div className="font_righteous header_logo_venue">The Venue</div>
+              <div className="font_roboto header_logo_venue">Musical Events</div>
+            </div>
+          </Toolbar>
+        </AppBar>
       </div>
-    )
+    );
   }
 }
